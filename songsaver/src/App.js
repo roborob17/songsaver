@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import SongOverview from './components/SongOverview';
 import Header from './components/Header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import About from './components/About'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './components/About';
 
 function App() {
   return (
