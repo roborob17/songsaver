@@ -1,7 +1,7 @@
 const initState = {
     songs: [
-      { title: "Rasputin", artist: "Boney M", genre: "disco", rating: "3", id: "1" },
-      { title: "Master of puppets", artist: "Metallica", genre: "metal", rating: "4", id: "2" }
+      { title: "Trains", artist: "Porcupine Tree", genre: "prog", rating: "5", id: "1" },
+      { title: "Zeit", artist: "Rammstein", genre: "heavy", rating: "4", id: "2" }
     ]
   }
   
