@@ -8,7 +8,7 @@ import About from './components/About'
 function App() {
   return (
     <BrowserRouter>
-      <div className='everything'>
+      <div>
         <Header />
         <Routes>
           <Route exact path="/" element={<SongOverview />} />

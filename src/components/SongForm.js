@@ -17,19 +17,19 @@ class SongForm extends React.Component {
         e.preventDefault();
         const newSong = this.state
         if (this.state.title == null) {
-            alert("Please provide correct input!")
+            alert("Please fill out all fields!")
             return
         }
         else if (this.state.artist == null) {
-            alert("Please provide correct input!")
+            alert("Please fill out all fields!")
             return
         }
         else if (this.state.rating == null) {
-            alert("Please provide correct input!")
+            alert("Please fill out all fields!")
             return
         }
         else if (this.state.genre == null) {
-            alert("Please provide correct input!")
+            alert("Please fill out all fields!")
             return
         }
         this.props.addSong(newSong)
@@ -51,16 +51,18 @@ class SongForm extends React.Component {
                     <input type="text" placeholder="Title" onChange={this.handleChange} name="title" id="title" />
                     <input type="text" placeholder="Artist" onChange={this.handleChange} name="artist" id="artist" />
                     <select defaultValue="DEFAULT" onChange={this.handleChange} name="genre" id="genre">
-                        <option value="DEFAULT" disabled hidden>Genre?</option>
-                        <option value="metal">Rock</option>
+                        <option value="DEFAULT" disabled hidden>Genre</option>
+                        <option value="rock">Rock</option>
+                        <option value="prog">Progressive Rock</option>
+                        <option value="alt">Alternative Rock</option>
+                        <option value="heavy">Heavy Metal</option>
+                        <option value="softrock">Soft Rock</option>
                         <option value="disco">Disco</option>
                         <option value="pop">Pop</option>
-                        <option value="hiphop">HipHop</option>
-                        <option value="palingsound">Palingsound</option>
                         <option value="other">Other</option>
                     </select>
                     <select defaultValue="DEFAULT" onChange={this.handleChange} name="rating" id="rating">
-                        <option value="DEFAULT" disabled hidden>Rating?</option>
+                        <option value="DEFAULT" disabled hidden>Rating</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
