@@ -34,9 +34,9 @@ class SongForm extends React.Component {
         }
         this.props.addSong(newSong)
         const titleForm = document.getElementById("title")
-        titleForm.value = ""
+        titleForm.value = null
         const artistForm = document.getElementById("artist")
-        artistForm.value = ""
+        artistForm.value = null
         const genreForm = document.getElementById("genre")
         genreForm.value = "DEFAULT"
         const ratingForm = document.getElementById("rating")
